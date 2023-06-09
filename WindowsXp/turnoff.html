@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Standby</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+  <style>
+    body {
+      padding: 2em;
+      background: cornflowerblue;
+    }
+
+    .turn-off,
+    .standby,
+    .restart {
+      position: relative;
+      border: 1px solid white;
+      height: 60px;
+      width: 60px;
+      border-radius: 10%;
+    }
+
+    .turn-off {
+      background-color: #d15638;
+    }
+
+    .standby {
+      background-color: #F8A634;
+    }
+
+    .restart {
+      background-color: #65A00B;
+      z-index: 1;
+    }
+
+    .turn-off-circle,
+    .standby-circle,
+    .restart-circle {
+      height: 35px;
+      margin: auto;
+      position: absolute;
+      width: 35px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 50%;
+      outline: 3.5px solid white;
+      outline-offset: -1px;
+    }
+
+    .standby-circle {
+      height: 32px;
+      width: 32px;
+      z-index: 1;
+    }
+
+    .restart-circle {
+      height: 25px;
+      width: 25px;
+      outline: 0;
+      outline-offset: 0;
+      background-color: #65A00B;
+    }
+
+    .turn-off-line,
+    .standby-line,
+    .restart-line {
+      height: 18px;
+      margin: auto;
+      position: absolute;
+      width: 0px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      outline: 3.5px solid white;
+      outline-offset: -1px;
+    }
+
+    .standby-line {
+      z-index: 1;
+      bottom: 25px;
+    }
+
+    .restart-line {
+      height: 40px;
+      z-index: -1;
+    }
+
+    .standby-line-cutter {
+      width: 15px;
+      height: 10px;
+      background: #F8A634;
+      position: absolute;
+      margin: auto;
+      z-index: -1;
+      top: 0;
+      right: -7px;
+      z-index: -1;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="turn-off">
+    <div class="turn-off-circle">
+      <div class="turn-off-line">
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="standby">
+    <div class="standby-circle">
+      <div class="standby-line">
+        <div class="standby-line-cutter">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="restart">
+    <div class="restart-circle">
+      <div class="restart-line"></div>
+      <div class="restart-line" style="transform: rotate(90deg);"></div>
+      <div class="restart-line" style="transform: rotate(45deg);outline: 2.75px solid white;"></div>
+      <div class="restart-line" style="transform: rotate(135deg);outline: 2.75px solid white;"></div>
+    </div>
+  </div>
+
+  <!-- <div class="test-icon">
+    <i class="lni lni-power-switch"></i>
+  </div>
+
+  <div class="test-icon">
+    <i class="lni lni-circle-minus"></i>
+  </div>
+
+  <div class="test-icon">
+    <i class="lni lni-sun"></i>
+  </div> 
+
+  .test-icon {
+      position: relative;
+      border: 1px solid white;
+      height: 60px;
+      width: 60px;
+      /* background-color: #F86F5F; */
+      background-color: #d15638;
+      /* background: radial-gradient(circle, hsla(218, 32%, 80%, 1) 0%, hsla(6, 100%, 74%, 1) 45%); */
+      border-radius: 10%;
+    }
+
+    .test-icon i {
+      font-size: 2.5em;
+      padding: 10px;
+      color: white;
+      transform: rotate(90deg);
+    }
+-->
+</body>
+
+</html>
