@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WindowsCalculator</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {}
+
+    .windows-calculator {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      right: 0;
+      padding: 1.5px;
+      border: 0.5px solid #333333;
+      background: #f3f3f3;
+      box-shadow: 0px 0px 4px 0px #a8a8a8;
+      height: 200px;
+      width: 140px;
+    }
+
+    .header {
+      height: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .header img {
+      height: 8px;
+      width: 8px;
+    }
+
+    .header span {
+      line-height: 12px;
+      font-size: 12px;
+      width: 16px;
+      height: 12px;
+      text-align: center;
+    }
+
+    .header span:hover {
+      background: #d6d6d6;
+    }
+
+    .header .close:hover {
+      background: #e60000;
+      color: white;
+    }
+
+    .content {
+      height: 35px;
+      text-align: end;
+      font-family: system-ui;
+      font-weight: 500;
+      padding-top: 10px;
+    }
+
+    .footer {
+      height: 146px;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-gap: 1px;
+    }
+
+    .item {
+      border: .5px solid #d6d6d6;
+      background: #ffffff;
+      border-radius: 1.5px;
+      text-align: center;
+      font-size: 6.5px;
+      font-family: sans-serif;
+      line-height: 22px;
+    }
+
+    .item:hover {
+      background: #f5f5f5;
+    }
+
+    .item:active {
+      border-bottom: .5px solid #ededed;
+    }
+
+    .item.mathsymb {
+      font-family: monospace;
+    }
+
+    .item .backspace {
+      height: 10px;
+      width: 10px;
+      vertical-align: middle;
+      margin-bottom: 2px;
+    }
+
+    .item.mathopr {
+      font-size: 10px;
+      font-family: auto;
+    }
+
+    .item.blue {
+      border: .5px solid #036ac4;
+      background: #036ac4;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="windows-calculator">
+    <div class="header">
+      <span class="icon"><img class="icon-img" src="./maximize.svg" alt="maximize-icon"></span>
+      <span class="close">&#215;</span>
+    </div>
+    <div class="content">12345</div>
+    <div class="footer">
+      <div class="item">&#37;</div>
+      <div class="item mathsymb">CE</div>
+      <div class="item mathsymb">C</div>
+      <div class="item backspace"><img class="backspace" src="./backspace.svg" alt="backspace"></div>
+      <div class="item mathsymb">&#185;&#8725;&#120;</div>
+      <div class="item mathsymb">&#120;&#178;</div>
+      <div class="item mathsymb">&#178;&#8730; &#120;</div>
+      <div class="item mathopr">&#247;</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item mathopr">&#215;</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item mathopr">&#8722;</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item mathopr">&#43;</div>
+      <div class="item mathopr">&#8314;/&#8331;</div>
+      <div class="item">0</div>
+      <div class="item mathopr">&#8228;</div>
+      <div class="item blue mathopr">&#61;</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
