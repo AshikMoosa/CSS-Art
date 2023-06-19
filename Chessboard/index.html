@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chessboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 5em;
+    }
+
+    .container {
+      perspective: 400px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: max-content;
+    }
+
+    .chessboard {
+      border: 40px solid #212121;
+      border-radius: 5px;
+      box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.5);
+      height: 600px;
+      width: 600px;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      transform: rotateX(20deg);
+    }
+
+    .chessboard .row1:nth-child(even),
+    .chessboard .row3:nth-child(even),
+    .chessboard .row5:nth-child(even),
+    .chessboard .row7:nth-child(even) {
+      background: linear-gradient(45deg, #424242, transparent);
+      box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .chessboard .row2:nth-child(odd),
+    .chessboard .row4:nth-child(odd),
+    .chessboard .row6:nth-child(odd),
+    .chessboard .row8:nth-child(odd) {
+      background: linear-gradient(45deg, #424242, transparent);
+      box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="chessboard">
+      <div class="chessboard-items row1"></div>
+      <div class="chessboard-items row1"></div>
+      <div class="chessboard-items row1"></div>
+      <div class="chessboard-items row1"></div>
+      <div class="chessboard-items row1"></div>
+      <div class="chessboard-items row1"></div>
+      <div class="chessboard-items row1"></div>
+      <div class="chessboard-items row1"></div>
+      <div class="chessboard-items row2"></div>
+      <div class="chessboard-items row2"></div>
+      <div class="chessboard-items row2"></div>
+      <div class="chessboard-items row2"></div>
+      <div class="chessboard-items row2"></div>
+      <div class="chessboard-items row2"></div>
+      <div class="chessboard-items row2"></div>
+      <div class="chessboard-items row2"></div>
+      <div class="chessboard-items row3"></div>
+      <div class="chessboard-items row3"></div>
+      <div class="chessboard-items row3"></div>
+      <div class="chessboard-items row3"></div>
+      <div class="chessboard-items row3"></div>
+      <div class="chessboard-items row3"></div>
+      <div class="chessboard-items row3"></div>
+      <div class="chessboard-items row3"></div>
+      <div class="chessboard-items row4"></div>
+      <div class="chessboard-items row4"></div>
+      <div class="chessboard-items row4"></div>
+      <div class="chessboard-items row4"></div>
+      <div class="chessboard-items row4"></div>
+      <div class="chessboard-items row4"></div>
+      <div class="chessboard-items row4"></div>
+      <div class="chessboard-items row4"></div>
+      <div class="chessboard-items row5"></div>
+      <div class="chessboard-items row5"></div>
+      <div class="chessboard-items row5"></div>
+      <div class="chessboard-items row5"></div>
+      <div class="chessboard-items row5"></div>
+      <div class="chessboard-items row5"></div>
+      <div class="chessboard-items row5"></div>
+      <div class="chessboard-items row5"></div>
+      <div class="chessboard-items row6"></div>
+      <div class="chessboard-items row6"></div>
+      <div class="chessboard-items row6"></div>
+      <div class="chessboard-items row6"></div>
+      <div class="chessboard-items row6"></div>
+      <div class="chessboard-items row6"></div>
+      <div class="chessboard-items row6"></div>
+      <div class="chessboard-items row6"></div>
+      <div class="chessboard-items row7"></div>
+      <div class="chessboard-items row7"></div>
+      <div class="chessboard-items row7"></div>
+      <div class="chessboard-items row7"></div>
+      <div class="chessboard-items row7"></div>
+      <div class="chessboard-items row7"></div>
+      <div class="chessboard-items row7"></div>
+      <div class="chessboard-items row7"></div>
+      <div class="chessboard-items row8"></div>
+      <div class="chessboard-items row8"></div>
+      <div class="chessboard-items row8"></div>
+      <div class="chessboard-items row8"></div>
+      <div class="chessboard-items row8"></div>
+      <div class="chessboard-items row8"></div>
+      <div class="chessboard-items row8"></div>
+      <div class="chessboard-items row8"></div>
+    </div>
+  </div>
+</body>
+
+</html>
